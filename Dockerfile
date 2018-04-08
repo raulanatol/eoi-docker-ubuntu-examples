@@ -1,7 +1,7 @@
 FROM ubuntu
 
 RUN apt-get update && \
-    apt-get install tree sl sudo vim && \
+    apt-get install -y tree sl sudo vim && \
     useradd user && \
     usermod -G sudo user
 
