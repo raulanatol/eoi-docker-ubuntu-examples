@@ -9,7 +9,7 @@ function error {
   exit 1
 }
 
-docker build -t eoi-docker-ubuntu-examples .
+docker build -t raulanatol/eoi-docker-ubuntu-examples .
 
 BRANCH=`git rev-parse --abbrev-ref HEAD`
 
