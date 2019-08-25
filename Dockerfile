@@ -1,7 +1,7 @@
-FROM ubuntu
+FROM ubuntu:16.04
 
 RUN apt-get update && \
-    apt-get install -y tree sl sudo vim && \
+    apt-get install -y tree sl sudo lsb-core && \
     useradd -m user && \
     usermod -G sudo user
 
